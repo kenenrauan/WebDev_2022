@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Instagram</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                outline: none;
+            }
+            body{
+                width: 100%;
+                background-color: rgb(240, 242, 245);
+            }
+            #form1{
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                width: 480px;
+                height: 530px;
+                padding: 30px 5px 20px 5px;
+                margin: 2vh 800px;
+                box-shadow: 5px 5px 6px -7px;
+                border: 0.1px solid gray;
+            }
+            #form2{
+                background-color: rgb(255, 255, 255);
+                position: absolute;
+                text-align: center;
+                width: 480px;
+                height: 40px;
+                padding: 30px 5px 20px 5px;
+                margin: 38vh 800px;
+                box-shadow: 5px 5px 6px -7px;
+                font-size: 23px;
+                text-align: center;
+                border: 0.1px solid rgb(194, 190, 190);
+            } 
+            #form2 a{
+                color: rgb(0, 149, 246);
+            }  
+            .insta{
+                margin-left: 90px;
+                margin-bottom: 30px;
+                width: 300px;
+                height: 100px;
+            }
+            input[type='email'], input[type='password']{
+                display: block;
+                background-color: rgb(255, 255, 255);
+                margin: auto;
+                border: 1.5px solid rgb(200, 200, 200);
+                width: 300px;
+                padding: 14px 40px;
+                border-radius: 5px;
+                text-align: left;
+                color: black;
+                font-family: "Segoe UI";
+                font-size: 15px;
+            }
+            button{
+                border: none;
+                background-color: rgb(24, 119, 242);
+                color:white;
+                margin: auto;
+                width: 385px;
+                display: block;
+                border-radius: 5px;
+                padding: 10px 0;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .logoface img{
+                width: 20px;
+                height: 20px;
+            }
+            .LogFace{
+                display: block;
+                width: 200px;
+                margin: auto;
+                color: rgb(16, 66, 133);
+                padding-left: 60px;
+                font-family: "Tahoma";
+                font-weight: 500;
+                font-size: 20px;
+                font-style: monospace;
+                /* margin-bottom: 40px; */
+            }
+            .forget{
+                position: absolute;
+                left: 175px;
+                top: 500px;
+                /* margin-left: 175px; */
+                font-size: 20px;
+                color: #385185;
+            }
+            .phones{
+                margin-left: 170px;
+                margin-top: 300px;
+            }
+            .phones img{
+                height: 900px;
+                width: 550px;
+            }
+            .hr{
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
+            .hr:after, .hr:before {
+                content: '';
+                display: block;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: calc((100% / 2) - 80px);
+                height: 1px;
+                background-color: #DBDBDB;
+            }
+            .wrapper{
+                display: flex;
+                align-items: center;
+                margin-left: 10px;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            .loginface{
+                margin-left: -50px;
+
+            }
+            .get-app{
+                margin-left: 970px;
+                margin-top: -150px;
+                font-size: 25px;
+            }
+            #markets img{
+                width: 190px;
+                height: 60px;
+            }
+            #one{
+                position: absolute;
+                top: 1100px;
+                left: 830px;
+            }
+            #two{
+                position: absolute;
+                top: 1100px;
+                left: 1050px;
+            }
+            .photos{
+                width: 190px;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form1">
+            <img src ="logo.png" class="insta">
+            <input type="email" placeholder="Phone number, username, or email" /> <br />
+            <input type="password" placeholder="Password" /><br />
+            <button type = "submit"> Log In</button><br>
+            <div class="hr">OR</div>
+            <div class="wrapper"><div class="logoface"><img src = "logoface.png"></div><div class="loginface"><a href="Facebook.html" class="LogFace">Log in with Facebook</a></div></div>
+            <!-- <span class="logoface"><img src ="logoface.png" alt="logoface"></span>
+            <a href="Facebook.html" class="LogFace">Log in with Facebook</a><br> -->
+            <a href="" class="forget">Forgot password?</a>
+        </form>
+        <form id="form2">
+            <p>Don't have an account? <a href="">Sign up</a></p>
+        </form>
+        <div class="phones">
+            <img src="phones.png" alt="phones">
+        </div>
+        <div class = "get-app">
+            <p>Get the app.</p>
+        </div>
+        <div id="markets">
+            <img src = "applestore.png" alt="applestore" id = "one">
+            <img src = "google.png" alt="googleplay" id="two">
+        </div>
+
+
+
+    </body>

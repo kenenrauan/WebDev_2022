@@ -1,0 +1,3 @@
+<h1>Rabbits</h1>
+<span>Rabbits, also known as bunnies or bunny rabbits,</span>
+<span> are small mammals in the family Leporidae (along with the hare) of the order Lagomorpha (along with the pika).</span>

@@ -1,0 +1,23 @@
+<mat-drawer-container class="example-container mainbody" >
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-list>
+      <mat-list-item routerLink="/">Home</mat-list-item>
+      <mat-list-item routerLink="/products">Soji and Accessories</mat-list-item>
+      <mat-list-item routerLink="/delivery">Delivery</mat-list-item>
+      <mat-list-item routerLink="/services">Soji Service Center</mat-list-item>
+      <mat-list-item routerLink="/reviews">Reviews</mat-list-item>
+      <mat-list-item routerLink="/cart">Cart</mat-list-item>
+      <mat-list-item routerLink="/vieworders">View My Orders</mat-list-item>
+      <mat-list-item (click)="getUsername()" routerLink="/signin">{{current}}</mat-list-item>
+
+    </mat-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Menu
+    </button>
+    <router-outlet></router-outlet>
+    <h4 class="d"><br> Copyright 2022 © The Zhanrocky Company.<br> zhanrocky.com</h4>
+  </div>
+</mat-drawer-container>

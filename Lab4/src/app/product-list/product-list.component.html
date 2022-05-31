@@ -1,0 +1,17 @@
+<div *ngFor="let product of product">
+  <h3>
+    <img [src]="product.imageLink" />
+    <a [href]="product.link">{{ product.name }}</a>
+  </h3>
+
+  <p *ngIf="product.description">{{ product.description }}</p>
+  <p><b>Rating</b>: {{ product.rating }} <br /></p>
+
+  <!-- <button type="button">Share</button> -->
+  <a target="__blank" 
+  class="share-btn" 
+  [href]="getShareLink(product.link)" 
+  title="Telegram share link">Share</a>
+
+  <p>______________________________________________________________</p>
+</div>

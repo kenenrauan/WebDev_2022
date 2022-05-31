@@ -1,0 +1,34 @@
+<h1>QUALITY, RELIABLE HOME CLEANING SYSTEMS
+  <br>
+  Sōji</h1>
+<div *ngIf="logged">
+  {{current}}
+</div>
+<nav >
+  <a routerLink="/">Home</a>
+  <a routerLink="/products">Soji and Accessories</a>
+  <a routerLink="/delivery">Delivery</a>
+  <a routerLink="/services">Soji Service Center</a>
+  <a routerLink="/reviews">Reviews</a>
+  <a routerLink="/cart"> Cart </a>
+  <a routerLink="/vieworders">View My Orders</a>
+  <a (click)="getUsername()" routerLink="/signin">{{current}} </a>
+</nav>
+
+
+<!-- <mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      Toggle extra text
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button>
+  </div>
+
+</mat-drawer-container> -->

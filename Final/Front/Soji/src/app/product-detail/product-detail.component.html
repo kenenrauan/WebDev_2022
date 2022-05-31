@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Product Detail</mat-card-title>
+
+  <mat-card class="example-card" *ngIf="product" routerLink="/detail/{{product.id}}">
+    <mat-card-title-group>
+      <mat-card-title>{{product.name}}</mat-card-title>
+      <mat-card-subtitle>{{product.price}} KZT</mat-card-subtitle>
+    </mat-card-title-group>
+    <img mat-card-lg-image src="{{product.image}}" >
+
+    <mat-card-content>
+      {{product.description}}
+    </mat-card-content>
+    <mat-card-content>
+      <button mat-raised-button class="gray" (click)="goBack()">go back</button>
+      <button mat-raised-button class="gray" (click)="addToCart(product)">Buy</button>
+    </mat-card-content>
+  </mat-card>
+</mat-card>
